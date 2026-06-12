@@ -9,6 +9,21 @@ public class Game {
 
     }
 
+    public void menuLoop(){
+        do{
+            mainMenu();
+            if(choice == 'n'){
+                //screen clears game starts
+            }
+            else if (choice == 's') {
+                //screen clears and status shows
+            }
+            else{
+                this.exit = true;
+            }
+        }while (!exit);
+    }
+
     public void mainMenu(){
         System.out.println("       ************************************************");
         System.out.println("       *             Yohane The Parhelion!            *");
