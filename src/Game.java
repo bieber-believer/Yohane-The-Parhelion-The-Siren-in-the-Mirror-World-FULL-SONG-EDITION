@@ -17,6 +17,7 @@ public class Game {
             }
             else if (choice == 's') {
                 //screen clears and status shows
+                status();
             }
             else{
                 this.exit = true;
@@ -35,9 +36,7 @@ public class Game {
         System.out.println("                 [Q]uit");
 
         System.out.print("Your choice: ");
-        choice = scanner.next().toLowerCase().charAt(0);
-
-        System.out.println(choice);
+        choice = scanner.nextLine().toLowerCase().charAt(0);
     }
 
     public void status(){
