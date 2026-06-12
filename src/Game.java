@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Game {
     Scanner scanner = new Scanner(System.in);
-    private boolean exit = false;
+    private boolean exit;
     private static char choice;
 
     public Game(){
-
+        exit = false;
     }
 
     public void menuLoop(){
