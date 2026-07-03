@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Menu {
-    public char choice;
-    public boolean exit;
+    private char choice;
+    private boolean exit;
     Scanner scanner = new Scanner(System.in);
 
     public void menuLoop(){
