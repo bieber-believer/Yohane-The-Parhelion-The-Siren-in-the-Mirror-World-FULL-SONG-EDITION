@@ -10,13 +10,18 @@ public class Menu {
             mainMenu();
             if(choice == 'n'){
                 //screen clears game starts
+                System.out.println(" Starting a new game...");
             }
             else if (choice == 's') {
                 //screen clears and status shows
                 status();
             }
-            else{
+            else if (choice == 'q') {
+                System.out.println("See you again soon!");
                 this.exit = true;
+            }
+            else {
+                System.out.println(" Invalid choice! Please try again! " );
             }
         }while (!exit);
     }
@@ -32,7 +37,8 @@ public class Menu {
         System.out.println("                 [Q]uit");
 
         System.out.print("Your choice: ");
-        choice = scanner.nextLine().toLowerCase().charAt(0);
+        choice = scanner.nextLine().toLowerCase();
+
     }
 
     public void status(){
